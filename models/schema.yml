@@ -1,0 +1,17 @@
+version:  2
+
+models:
+  - name: stg_cities
+    columns:
+      - name: city_id
+        tests:
+          - unique
+          - not_null
+      - name: city_name
+        tests:
+          - not_null
+      - name: region
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['England','Northern Ireland','Scotland','State','Wales']

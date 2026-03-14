@@ -1,0 +1,15 @@
+version:  2
+
+sources:
+  - name: raw
+    database: test_db
+    schema: public
+    tables:
+      - name: cities
+      - name: departments
+      - name: diagnosis
+      - name: insurance
+      - name: patience
+      - name: procedures
+      - name: providers
+      - name: visits
